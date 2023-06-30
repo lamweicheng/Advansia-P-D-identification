@@ -5,6 +5,9 @@ This repository shows the video of Pest & Disease identification software applic
 - Copyright © 2023 Advansia Sdn Bhd. All Rights Reserved.
 - Copyright © 2023 Agritix Sdn Bhd. All Rights Reserved.
 
+######
+######
+
 ### UI Designer of this software application: 
 - Anderson Lam Wei Cheng
 - 👋 Undergraduate Senior at UC Berkeley | Electrical Engineering and Computer Sciences - Entrepreneurship and Technology.
