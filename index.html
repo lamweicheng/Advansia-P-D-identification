@@ -1,0 +1,119 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Advansia P&D Identification Software</title>
+    <style>
+        body {
+            margin: 0;
+            padding: 0;
+            background-color: black;
+            color: #fff;
+        }
+
+        #advansia-title {
+            text-align: center;
+            margin-top: 20px;
+        }
+
+        #video-container {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            width: 100vw;
+            height: calc(100vh - 70px);
+            position: relative;
+            margin-top: 10px;
+        }
+
+        #video-overlay {
+            display: none;
+            position: fixed;
+            top: 50%;
+            left: 50%;
+            transform: translate(-50%, -50%);
+            width: 80%;
+            max-width: 600px;
+            background-color: #f1f1f1;
+            text-align: left;
+            padding: 20px;
+            box-sizing: border-box;
+            color: #000;
+            border-radius: 10px;
+            box-shadow: 0 2px 8px rgba(0, 0, 0, 0.3);
+            z-index: 9999;
+        }
+
+        #video-overlay p {
+            margin: 0;
+            padding-bottom: 10px;
+            text-align: left;
+        }
+
+        #more-info-button {
+            position: absolute;
+            top: 20px;
+            right: 20px;
+            background-color: #f1f1f1; /* Same as overlay background color */
+            color: #000; /* Text color */
+            border: none;
+            padding: 10px 20px;
+            font-size: 16px;
+            cursor: pointer;
+            z-index: 999;
+        }
+
+        #close-button {
+            position: absolute;
+            top: 10px;
+            right: 10px;
+            background-color: #888;
+            color: #fff;
+            border: none;
+            padding: 5px 10px;
+            font-size: 14px;
+            cursor: pointer;
+        }
+    </style>
+</head>
+<body>
+    <div id="advansia-title">
+        <h1>Advansia Pests and Diseases Identification Software | Powered by Agritix</h1>
+    </div>
+    <div id="video-container">
+        <!-- Replace the <iframe> tag with your Vimeo player code -->
+        <iframe src="https://player.vimeo.com/video/841265156?badge=0&amp;autopause=0&amp;player_id=0&amp;app_id=58479" width="393" height="852" frameborder="0" allow="autoplay; fullscreen; picture-in-picture" allowfullscreen title="Advansia P&amp;D Identification Software 2023"></iframe>
+        <div id="video-overlay">
+            <button id="close-button" onclick="closeOverlay()">Close</button>
+            <p>This video shows the design of Advansia Pest & Disease Identification Software Application that Advansia Sdn Bhd and Agritix Sdn Bhd are developing.</p>
+            <h3>Copyrights details as below:</h3>
+            <ul>
+                <li>Copyright © 2023 Advansia Sdn Bhd. All Rights Reserved.</li>
+                <li>Copyright © 2023 Agritix Sdn Bhd. All Rights Reserved.</li>
+            </ul>
+            <hr>
+            <h3>UI Designer of this software application:</h3>
+            <ul>
+                <li>Anderson Lam Wei Cheng</li>
+                <li>👋 Undergraduate Senior at UC Berkeley | Electrical Engineering and Computer Sciences - Entrepreneurship and Technology.</li>
+                <li>📫 My Linkedin: <a href="https://www.linkedin.com/in/weichenglam/">https://www.linkedin.com/in/weichenglam/</a></li>
+                <li>📖 My Personal Portfolio: <a href="https://www.andersonlam.info/">https://www.andersonlam.info/</a></li>
+            </ul>
+            <p>Please report any issues here: <a href="mailto:lamweicheng@berkeley.edu">lamweicheng@berkeley.edu</a></p>
+        </div>
+    </div>
+    <button id="more-info-button" onclick="showOverlay()">More Information</button>
+
+    <script>
+        var video = document.getElementById('video');
+        var overlay = document.getElementById('video-overlay');
+
+        function showOverlay() {
+            overlay.style.display = 'block';
+        }
+
+        function closeOverlay() {
+            overlay.style.display = 'none';
+        }
+    </script>
+</body>
+</html>
